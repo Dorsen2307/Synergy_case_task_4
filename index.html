@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Интерактивный калькулятор</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+	<div class="calculator">
+		<h1 class="calculator-title">Калькулятор</h1>
+
+		<div class="input-group">
+			<div class="input-wrapper">
+				<label for="num1">Первое число</label>
+				<input type="text" id="num1" class="calculator-input" placeholder="Введите число" step="any">
+			</div>
+
+			<div class="input-wrapper">
+				<label for="num2">Второе число</label>
+				<input type="text" id="num2" class="calculator-input" placeholder="Введите число" step="any">
+			</div>
+		</div>
+
+		<div class="operations">
+			<button class="operation-btn" data-operation="sum">
+				<span class="btn-icon">➕</span>
+				<span class="btn-text">Сумма</span>
+			</button>
+			<button class="operation-btn" data-operation="difference">
+				<span class="btn-icon">➖</span>
+				<span class="btn-text">Разность</span>
+			</button>
+			<button class="operation-btn" data-operation="multiply">
+				<span class="btn-icon">✖️</span>
+				<span class="btn-text">Произведение</span>
+			</button>
+			<button class="operation-btn" data-operation="division">
+				<span class="btn-icon">➗</span>
+				<span class="btn-text">Деление</span>
+			</button>
+		</div>
+
+		<div class="result-section">
+			<label class="result-label">Результат:</label>
+			<div class="result-display" id="result">
+				<span class="result-placeholder">Ожидание ввода...</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
