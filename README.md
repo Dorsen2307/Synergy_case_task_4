@@ -36,3 +36,13 @@
 - **HTML5** - структура приложения
 - **CSS3** - стилизация и анимации
 - **JavaScript** - логика работы калькулятора
+
+## 👨‍💻 Автор
+
+<div align="center">
+  <a href="https://github.com/Dorsen2307">
+    <img src="https://img.shields.io/badge/GitHub-Dorsen2307-181717?style=flat-square&logo=github&logoColor=white&labelColor=181717" height="30">
+  </a>
+  <br>
+  <sub>✨ С любовью к коду ✨</sub>
+</div>
