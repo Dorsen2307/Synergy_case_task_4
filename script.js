@@ -96,8 +96,6 @@ class Calculator {
 		this.resultDisplay.classList.add('success');
 		this.resultDisplay.classList.remove('error');
 		this.resultDisplay.style.background = 'linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%)';
-		
-		this.hideError();
 	}
 	
 	showError(message) {
@@ -121,11 +119,6 @@ class Calculator {
 			// Округляем до 4 знаков после запятой
 			return result.toFixed(4).replace(/\.?0+$/, '');
 		}
-	}
-	
-	hideError() {
-		this.num1Input.style.borderColor = '';
-		this.num2Input.style.borderColor = '';
 	}
 	
 	clearInputs() {
