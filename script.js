@@ -13,20 +13,6 @@ class Calculator {
 			btn.addEventListener('click', (e) => this.handleOperation(e));
 		});
 		
-		// Валидация ввода (разрешаем только числа)
-		[this.num1Input, this.num2Input].forEach(input => {
-			input.addEventListener('keypress', (e) => {
-				if (e.key === '-' || e.key === '+' || e.key === 'e') {
-					e.preventDefault();
-				}
-			});
-			
-			input.addEventListener('input', () => {
-				this.hideError();
-				this.removeResultClass();
-			});
-		});
-		
 		// Обработка клавиши Enter при выборе кнопки по Tab
 		document.addEventListener('keypress', (e) => {
 			if (e.key === 'Enter') {
