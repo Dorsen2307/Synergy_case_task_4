@@ -92,7 +92,7 @@ class Calculator {
 	}
 	
 	displayResult(result) {
-		this.resultDisplay.innerHTML = this.formatResult(result);
+		this.resultDisplay.textContent = this.formatResult(result);
 		this.resultDisplay.classList.add('success');
 		this.resultDisplay.classList.remove('error');
 		this.resultDisplay.style.background = 'linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%)';
